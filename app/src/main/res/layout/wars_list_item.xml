@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <data>
+
+  <variable
+   name="character"
+   type="com.adi.arrk_demo.service.model.Character" />
+
+  <variable
+   name="callback"
+   type="com.adi.arrk_demo.callback.OnClickCallback" />
+ </data>
+
+  <LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+>
+
+   <TextView
+       android:id="@+id/name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:contentDescription="@string/app_name"
+       android:textColor="@color/text_color_list_item"
+
+       android:text="@{character.name}"
+       android:onClick="@{(v) ->  callback.onClick(v,character)}"
+       android:gravity="center"
+       android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+      <View
+          android:layout_width="match_parent"
+          android:background="@color/text_color_list_item"
+          android:layout_height="1dp"></View>
+
+
+  </LinearLayout>
+
+
+</layout>

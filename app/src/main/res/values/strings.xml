@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Arrk Android Demo</string>
+    <string name="loading_characters">Loading Characters...</string>
+    <string name="characters_list">Characters list</string>
+    <string name="character_details">Character Details</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="height">Height</string>
+    <string name="mass">Mass</string>
+    <string name="created_date_time">DateTime</string>
+    <string name="error_occurred">Something happens wrong</string>
+</resources>
